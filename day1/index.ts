@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import * as path from "path";
 
-const getTheMostCalories = () => {
+const getTheMostCalories = (): number => {
   const data: Array<string> = parseElvesDataToString();
 
   let maxCalories: number = -1;
@@ -21,7 +21,7 @@ const getTheMostCalories = () => {
   return maxCalories;
 };
 
-const getSumOfTopThreeMostCalories = () => {
+const getSumOfTopThreeMostCalories = (): number => {
   const data: Array<string> = parseElvesDataToString();
 
   let caloriesArray: Array<number> = [];
