@@ -15,23 +15,19 @@ export const getAssignmentPairsCount = () => {
       /** when A < C:
        * A is definitely lesser than C, so C is the inner range
        * therefore D have to be less or equal to B */
-      firstSegment[0] < secondSegment[0] &&
-      secondSegment[1] <= firstSegment[1]
-    ) {
-      total++;
-    } else if (
+
       /** when A = C:
        * A or C could be inner range */
-      firstSegment[0] === secondSegment[0]
-    ) {
-      total++;
-    } else if (
+
       /** when A > C:
        * C is definitely lesser than A, so A is the inner range
        * therefore B has to be less or equal to D
        */
-      firstSegment[0] > secondSegment[0] &&
-      secondSegment[1] >= firstSegment[1]
+      (firstSegment[0] < secondSegment[0] &&
+        secondSegment[1] <= firstSegment[1]) ||
+      firstSegment[0] === secondSegment[0] ||
+      (firstSegment[0] > secondSegment[0] &&
+        secondSegment[1] >= firstSegment[1])
     ) {
       total++;
     }
@@ -54,23 +50,19 @@ export const getAssignmentOverlappedPairsCount = () => {
       /** when A < C:
        * A is definitely lesser than C, so C is the inner range
        * therefore B have to be more or equal to C */
-      firstSegment[0] < secondSegment[0] &&
-      firstSegment[1] >= secondSegment[0]
-    ) {
-      total++;
-    } else if (
+
       /** when A = C:
        * A or C could be inner range */
-      firstSegment[0] === secondSegment[0]
-    ) {
-      total++;
-    } else if (
+
       /** when A > C:
        * C is definitely lesser than A, so A is the inner range
        * therefore D has to be more or equal to A
        */
-      firstSegment[0] > secondSegment[0] &&
-      secondSegment[1] >= firstSegment[0]
+      (firstSegment[0] < secondSegment[0] &&
+        firstSegment[1] >= secondSegment[0]) ||
+      firstSegment[0] === secondSegment[0] ||
+      (firstSegment[0] > secondSegment[0] &&
+        secondSegment[1] >= firstSegment[0])
     ) {
       total++;
     }
@@ -88,5 +80,7 @@ export const parseAssignmentDataToString = () => {
 
 /** result */
 console.log("get assignment pairs count", getAssignmentPairsCount());
-console.log("get assignment overlapped pairs count", getAssignmentOverlappedPairsCount());
-
+console.log(
+  "get assignment overlapped pairs count",
+  getAssignmentOverlappedPairsCount()
+);
