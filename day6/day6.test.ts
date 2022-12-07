@@ -5,7 +5,7 @@ const mockParseSignalDataToString = jest.spyOn(
   "parseSignalDataToString"
 );
 
-describe("day-4 test", () => {
+describe("day-6 test", () => {
   beforeEach(() => {
     jest.clearAllMocks();
 
