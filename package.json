@@ -12,6 +12,7 @@
     "day6": "ts-node day6/index.ts",
     "day7": "ts-node day7/index.ts",
     "day8": "ts-node day8/index.ts",
+    "day9": "ts-node day9/index.ts",
     "test": "jest"
   },
   "repository": {

@@ -1,7 +1,9 @@
 import { readFileSync } from "fs";
 import * as path from "path";
 
-/** JS don't support pass by reference */
+/** JS don't support pass by reference for non-object or non-array
+ *  https://flexiple.com/javascript/javascript-pass-by-reference-or-value/
+ */
 let leftScenicTrees = 0;
 let rightScenicTrees = 0;
 let upScenicTrees = 0;
