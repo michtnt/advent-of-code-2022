@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import * as path from "path";
 
 export const getSumOfSignalStrengths = () => {
-  let data = parseProgramToString();
+  let data = parseProgramDataToString();
   let map = new Map();
   let cycleCount = 1;
   let x = 1;
@@ -39,7 +39,7 @@ export const getSumOfSignalStrengths = () => {
 };
 
 export const getEightCapitalLetters = () => {
-  let data = parseProgramToString();
+  let data = parseProgramDataToString();
   let map = new Map();
   let cycleCount = 1;
   let x = 1;
@@ -87,7 +87,7 @@ const isSpriteVisible = (cycle: number, map: any) => {
   return diff >= 0 && diff <= 2;
 };
 
-export const parseProgramToString = () => {
+export const parseProgramDataToString = () => {
   return readFileSync(path.join(__dirname, "./input.txt"))
     .toString()
     .split("\n");

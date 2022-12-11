@@ -1,3 +1,5 @@
+# Problem
+
 --- Day 10: Cathode-Ray Tube ---
 You avoid the ropes, plunge into the river, and swim to shore.
 
@@ -314,7 +316,7 @@ Render the image given by your program. What eight capital letters appear on you
 
 Your puzzle answer was RBPARAGF.
 
-Both parts of this puzzle are complete! They provide two gold stars: **
+Both parts of this puzzle are complete! They provide two gold stars: \*\*
 
 At this point, you should return to your Advent calendar and try another puzzle.
 
