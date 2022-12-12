@@ -5,7 +5,7 @@ const mockParseCratesDataToString = jest.spyOn(
   "parseCratesDataToString"
 );
 
-describe("day-4 test", () => {
+describe("day-5 test", () => {
   beforeEach(() => {
     jest.clearAllMocks();
 

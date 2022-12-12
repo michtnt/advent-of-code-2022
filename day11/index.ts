@@ -91,13 +91,13 @@ export const parseMonkeyDataToString = () => {
 };
 
 console.log(
-  "Part 1: 2 most active monkeys",
+  "2 most active monkeys after 20 rounds of stuff-slinging simian shenanigans",
   getMonkeyBusiness(20, (worryMultiplied: number) =>
     Math.floor(worryMultiplied / 3)
   )
 );
 console.log(
-  "Part 2: 2 most active monkeys",
+  "2 most active monkeys after 10000 rounds of stuff-slinging simian shenanigans",
   getMonkeyBusiness(
     10000,
     (worryMultiplied: number) => worryMultiplied % divisiblePart2
