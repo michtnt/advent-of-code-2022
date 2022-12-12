@@ -9,7 +9,7 @@ export const getMonkeyBusiness = (
 ) => {
   const data = parseMonkeyDataToString();
 
-  let monkeyItems = [];
+  let monkeyItems: any[] = [];
   let activeMonkeys = [];
   divisiblePart2 = 1;
 
