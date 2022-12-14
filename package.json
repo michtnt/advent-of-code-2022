@@ -4,6 +4,8 @@
   "description": "repository for advent of code 2022 puzzle solution",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
+    "create-day": "bash create-day.sh",
     "day1": "ts-node day1",
     "day2": "ts-node day2",
     "day3": "ts-node day3",
@@ -14,8 +16,7 @@
     "day8": "ts-node day8",
     "day9": "ts-node day9",
     "day10": "ts-node day10",
-    "day11": "ts-node day11",
-    "test": "jest"
+    "day11": "ts-node day11"
   },
   "repository": {
     "type": "git",
